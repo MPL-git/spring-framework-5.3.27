@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+}
+
+group 'org.springframework'
+version '5.3.27'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    api(project(":spring-beans"))
+    api(project(":spring-core"))
+    api(project(":spring-context"))
+    api(project(":spring-webmvc"))
+    api(project(":spring-jdbc"))
+    api(project(":spring-orm"))
+    api(project(":spring-tx"))
+    api(project(":spring-web"))
+    api(project(":spring-context-indexer"))
+    api(project(":spring-context-support"))
+    api(project(":spring-expression"))
+    api(project(":spring-instrument"))
+    api(project(":spring-jcl"))
+    api(project(":spring-jms"))
+    api(project(":spring-messaging"))
+    api(project(":spring-oxm"))
+    api(project(":spring-test"))
+    api(project(":spring-webflux"))
+    api(project(":spring-websocket"))
+//    api(project(":spring-aspects"))
+//    api('org.springframework:spring-aspectj:5.2.9')
+    api("org.aspectj:aspectjweaver:1.9.6")
+    api(project(":spring-aop"))
+    api group: 'junit', name: 'junit', version: '4.12'
+//    api("com.alibaba:druid:1.2.4")
+//    api("mysql:mysql-connector-java:5.1.48")
+}
+
+test {
+    useJUnitPlatform()
+}

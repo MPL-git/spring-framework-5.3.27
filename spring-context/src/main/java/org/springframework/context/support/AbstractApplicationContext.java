@@ -618,7 +618,7 @@ public abstract class AbstractApplicationContext extends DefaultResourceLoader
 
 				/**
 				 * 5
-				 * 调用各种 beanFactory 处理器 bfpp
+				 * 调用各种 beanFactory 处理器 BeanFactoryPostProcessors
 				 */
 				StartupStep beanPostProcess = this.applicationStartup.start("spring.context.beans.post-process");
 				// Invoke factory processors registered as beans in the context.
